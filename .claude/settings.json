@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:aperture.framer.media)"
+      "WebFetch(domain:aperture.framer.media)",
+      "Bash(npm run build-only:*)",
+      "Bash(npx playwright:*)",
+      "Bash(wait:*)",
+      "Bash(open:*)",
+      "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/sections/TestimonialsSection.vue\":*)",
+      "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/layout/FooterSection.vue\":*)",
+      "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/sections/CtaSection.vue\":*)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/sections",
+      "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/layout"
     ]
   }
 }
