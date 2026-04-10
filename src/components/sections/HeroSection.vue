@@ -17,7 +17,7 @@
       <div class="container hero-inner">
         <div class="hero-eyebrow text-yellow-500">
           <span class="eyebrow-line"></span>
-          Commercial Photography Studio
+          Commercial Photography Services
         </div>
         <h1 class="hero-headline">
           Every photograph<br />
