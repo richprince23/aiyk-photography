@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const projects = [
+const projects = <Project[]>[
   {
     image: '/images/3WwYqzhCzeuAA0tSlhUw9w1oc.jpeg',
     category: 'Fashion & Editorial',
@@ -36,6 +36,17 @@ const projects = [
     size: 'medium',
   },
 ]
+
+interface Project {
+  image: string
+  category: string
+  title: string
+  year: string
+  size: 'small' | 'medium' | 'large'
+}
+
+
+
 </script>
 
 <template>
@@ -57,17 +68,17 @@ const projects = [
         <!-- Large feature -->
         <div class="grid-item grid-large group">
           <div class="item-image">
-            <img :src="projects[0].image" :alt="projects[0].title" class="item-img" />
+            <img :src="projects[0]?.image" :alt="projects[0]?.title" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>
           </div>
           <div class="item-meta">
             <div>
-              <p class="item-category">{{ projects[0].category }}</p>
-              <p class="item-title">{{ projects[0].title }}</p>
+              <p class="item-category">{{ projects[0]?.category }}</p>
+              <p class="item-title">{{ projects[0]?.title }}</p>
             </div>
-            <span class="item-year">{{ projects[0].year }}</span>
+            <span class="item-year">{{ projects[0]?.year }}</span>
           </div>
         </div>
 
@@ -93,33 +104,33 @@ const projects = [
         <!-- Bottom two equal -->
         <div class="grid-item group grid-bottom-left">
           <div class="item-image item-image--wide">
-            <img :src="projects[3].image" :alt="projects[3].title" class="item-img" />
+            <img :src="projects[3]?.image" :alt="projects[3]?.title" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>
           </div>
           <div class="item-meta">
             <div>
-              <p class="item-category">{{ projects[3].category }}</p>
-              <p class="item-title">{{ projects[3].title }}</p>
+              <p class="item-category">{{ projects[3]?.category }}</p>
+              <p class="item-title">{{ projects[3]?.title }}</p>
             </div>
-            <span class="item-year">{{ projects[3].year }}</span>
+            <span class="item-year">{{ projects[3]?.year }}</span>
           </div>
         </div>
 
         <div class="grid-item group grid-bottom-right">
           <div class="item-image item-image--wide">
-            <img :src="projects[4].image" :alt="projects[4].title" class="item-img" />
+            <img :src="projects[4]?.image" :alt="projects[4]?.title" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>
           </div>
           <div class="item-meta">
             <div>
-              <p class="item-category">{{ projects[4].category }}</p>
-              <p class="item-title">{{ projects[4].title }}</p>
+              <p class="item-category">{{ projects[4]?.category }}</p>
+              <p class="item-title">{{ projects[4]?.title }}</p>
             </div>
-            <span class="item-year">{{ projects[4].year }}</span>
+            <span class="item-year">{{ projects[4]?.year }}</span>
           </div>
         </div>
       </div>
