@@ -15,21 +15,21 @@ const projects = [
     size: 'small',
   },
   {
-    image: '/images/6gw1k929tTnlbEBhukcXvrqToJo.jpeg',
+    image: '/images/0Va0F0TnXbfN2AupsEn7DJIl7pc.png',
     category: 'Brand & Commercial',
     title: 'Easy Living',
     year: '2023',
     size: 'small',
   },
   {
-    image: '/images/K13ohMB77Ii9gPrk1P4Jg7MYVo.png',
+    image: '/images/h2CQMuuXEjVuDdz5PTtRbU53n3U.png',
     category: 'Fashion & Editorial',
     title: 'Sun Veil',
     year: '2023',
     size: 'medium',
   },
   {
-    image: '/images/pMd4SDTzuamCixIwDM3a5RZA2Oo.jpeg',
+    image: '/images/xg48NGIJ2BKiB6a3n9qc7YrSh0.png',
     category: 'Brand & Commercial',
     title: 'Refined Detail',
     year: '2024',
@@ -73,11 +73,7 @@ const projects = [
 
         <!-- Right column stacked -->
         <div class="grid-right-col">
-          <div
-            v-for="project in projects.slice(1, 3)"
-            :key="project.title"
-            class="grid-item group"
-          >
+          <div v-for="project in projects.slice(1, 3)" :key="project.title" class="grid-item group">
             <div class="item-image item-image--short">
               <img :src="project.image" :alt="project.title" class="item-img" />
               <div class="item-hover-overlay">
