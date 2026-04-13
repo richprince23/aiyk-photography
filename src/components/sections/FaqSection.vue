@@ -28,6 +28,19 @@ const faqs = [
   },
 ]
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+}
+
 const openIndex = ref<number | null>(null)
 
 function toggle(i: number) {
@@ -36,7 +49,8 @@ function toggle(i: number) {
 </script>
 
 <template>
-  <section class="faq-section">
+  <script type="application/ld+json" v-text="JSON.stringify(faqSchema)"></script>
+  <section id="faq" class="faq-section">
     <div class="container">
       <div class="faq-layout">
         <!-- Label -->

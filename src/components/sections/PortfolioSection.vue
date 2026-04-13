@@ -68,7 +68,7 @@ interface Project {
         <!-- Large feature -->
         <div class="grid-item grid-large group">
           <div class="item-image">
-            <img :src="projects[0]?.image" :alt="projects[0]?.title" class="item-img" />
+            <img :src="projects[0]?.image" :alt="`${projects[0]?.title} — ${projects[0]?.category} by aiky Photography`" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>
@@ -86,7 +86,7 @@ interface Project {
         <div class="grid-right-col">
           <div v-for="project in projects.slice(1, 3)" :key="project.title" class="grid-item group">
             <div class="item-image item-image--short">
-              <img :src="project.image" :alt="project.title" class="item-img" />
+              <img :src="project.image" :alt="`${project.title} — ${project.category} by aiky Photography`" class="item-img" />
               <div class="item-hover-overlay">
                 <span class="view-label">View Project</span>
               </div>
@@ -104,7 +104,7 @@ interface Project {
         <!-- Bottom two equal -->
         <div class="grid-item group grid-bottom-left">
           <div class="item-image item-image--wide">
-            <img :src="projects[3]?.image" :alt="projects[3]?.title" class="item-img" />
+            <img :src="projects[3]?.image" :alt="`${projects[3]?.title} — ${projects[3]?.category} by aiky Photography`" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>
@@ -120,7 +120,7 @@ interface Project {
 
         <div class="grid-item group grid-bottom-right">
           <div class="item-image item-image--wide">
-            <img :src="projects[4]?.image" :alt="projects[4]?.title" class="item-img" />
+            <img :src="projects[4]?.image" :alt="`${projects[4]?.title} — ${projects[4]?.category} by aiky Photography`" class="item-img" />
             <div class="item-hover-overlay">
               <span class="view-label">View Project</span>
             </div>

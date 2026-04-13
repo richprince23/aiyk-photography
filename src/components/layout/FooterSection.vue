@@ -4,7 +4,7 @@
       <div class="footer-top">
         <!-- Brand -->
         <div class="footer-brand">
-          <p class="footer-logo">AIYK</p>
+          <p class="footer-logo">aiky</p>
           <p class="footer-tagline">
             Professional commercial photography studio creating clean, strategic imagery for modern brands.
           </p>
@@ -25,8 +25,8 @@
         <div class="footer-col">
           <p class="footer-col-label">Contact</p>
           <div class="footer-contact">
-            <a href="mailto:erintravis392@gmail.com" class="footer-link">
-              erintravis392@gmail.com
+            <a href="mailto:info@aikyphotography.com" class="footer-link">
+              info@aikyphotography.com
             </a>
             <a href="tel:5134613086" class="footer-link">
               (513) 461-3086
@@ -38,7 +38,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copy">
-          &copy; {{ new Date().getFullYear() }} AIYK Photography. All rights reserved.
+          &copy; {{ new Date().getFullYear() }} aiky Photography. All rights reserved.
         </p>
         <p class="footer-copy">Oxford, OH</p>
       </div>

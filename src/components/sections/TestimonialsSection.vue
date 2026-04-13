@@ -2,17 +2,19 @@
 const testimonials = [
   {
     quote:
-      'AIYK completely transformed our product line visuals. The attention to detail and ability to capture our brand identity was remarkable. Our conversion rate increased by 30% after the rebrand.',
+      'aiky completely transformed our product line visuals. The attention to detail and ability to capture our brand identity was remarkable. Our conversion rate increased by 30% after the rebrand.',
     name: 'Marcus Webb',
     role: 'Creative Director',
     company: 'Forma Studio',
+    rating: 5,
   },
   {
     quote:
-      'Working with AIYK was effortless. They understood exactly what we needed for our editorial campaign without us having to over-explain. The results were beyond what we imagined.',
+      'Working with aiky was effortless. They understood exactly what we needed for our editorial campaign without us having to over-explain. The results were beyond what we imagined.',
     name: 'Jenna Alcott',
     role: 'Founder',
     company: 'Alcott Apparel',
+    rating: 5,
   },
   {
     quote:
@@ -20,12 +22,39 @@ const testimonials = [
     name: 'Daniel Osei',
     role: 'Marketing Lead',
     company: 'Northfield Brands',
+    rating: 5,
   },
 ]
+
+const reviewSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'aiky Photography',
+  review: testimonials.map((t) => ({
+    '@type': 'Review',
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: t.rating,
+      bestRating: 5,
+    },
+    author: {
+      '@type': 'Person',
+      name: t.name,
+    },
+    reviewBody: t.quote,
+  })),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: 5,
+    reviewCount: testimonials.length,
+    bestRating: 5,
+  },
+}
 </script>
 
 <template>
-  <section class="testimonials-section">
+  <script type="application/ld+json" v-text="JSON.stringify(reviewSchema)"></script>
+  <section id="testimonials" class="testimonials-section">
     <div class="container">
       <!-- Header -->
       <div class="testimonials-header">

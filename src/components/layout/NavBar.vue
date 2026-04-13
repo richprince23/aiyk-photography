@@ -24,7 +24,7 @@ const navLinks = [
   >
     <div class="container nav-inner">
       <a href="#home" class="nav-logo">
-        AIYK
+        aiky
       </a>
 
       <!-- Desktop nav -->

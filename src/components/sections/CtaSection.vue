@@ -29,8 +29,8 @@ function handleSubmit() {
           </h2>
 
           <div class="contact-details">
-            <a href="mailto:erintravis392@gmail.com" class="contact-link">
-              erintravis392@gmail.com
+            <a href="mailto:info@aikyphotography.com" class="contact-link">
+              info@aikyphotography.com
             </a>
             <a href="tel:5134613086" class="contact-link">
               (513) 461-3086

@@ -2,7 +2,7 @@
   <section id="home" class="hero">
     <!-- Full-bleed background image -->
     <div class="hero-bg">
-      <img src="/images/pMd4SDTzuamCixIwDM3a5RZA2Oo.jpeg" alt="AIYK Photography" class="hero-img" />
+      <img src="/images/pMd4SDTzuamCixIwDM3a5RZA2Oo.jpeg" alt="Commercial photography session by aiky Photography — Oxford, OH" class="hero-img" />
       <div class="hero-overlay"></div>
     </div>
 
