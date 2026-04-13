@@ -10,7 +10,11 @@
       "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/layout/FooterSection.vue\":*)",
       "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/sections/CtaSection.vue\":*)",
       "Bash(npm run:*)",
-      "Bash(npm --version)"
+      "Bash(npm --version)",
+      "Bash(npm ci:*)",
+      "Read(//Users/kweku/.npm/_logs/**)",
+      "Bash(npm show:*)",
+      "Bash(npm install:*)"
     ],
     "additionalDirectories": [
       "/tmp",
