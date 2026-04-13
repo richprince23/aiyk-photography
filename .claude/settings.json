@@ -8,12 +8,14 @@
       "Bash(open:*)",
       "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/sections/TestimonialsSection.vue\":*)",
       "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/layout/FooterSection.vue\":*)",
-      "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/sections/CtaSection.vue\":*)"
+      "Bash(\"/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/sections/CtaSection.vue\":*)",
+      "Bash(npm run:*)"
     ],
     "additionalDirectories": [
       "/tmp",
       "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/sections",
-      "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/layout"
+      "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiky-photography/src/components/layout",
+      "/Volumes/STORAGE/PROJECTS/Gigs 2023/aiyk-photography/src/components/__tests__"
     ]
   }
 }

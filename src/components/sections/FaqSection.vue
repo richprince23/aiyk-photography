@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 const faqs = [
   {
@@ -46,10 +46,22 @@ const openIndex = ref<number | null>(null)
 function toggle(i: number) {
   openIndex.value = openIndex.value === i ? null : i
 }
+
+let schemaTag: HTMLScriptElement | null = null
+
+onMounted(() => {
+  schemaTag = document.createElement('script')
+  schemaTag.type = 'application/ld+json'
+  schemaTag.textContent = JSON.stringify(faqSchema)
+  document.head.appendChild(schemaTag)
+})
+
+onUnmounted(() => {
+  schemaTag?.remove()
+})
 </script>
 
 <template>
-  <script type="application/ld+json" v-text="JSON.stringify(faqSchema)"></script>
   <section id="faq" class="faq-section">
     <div class="container">
       <div class="faq-layout">

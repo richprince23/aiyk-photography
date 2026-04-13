@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted } from 'vue'
+
 const testimonials = [
   {
     quote:
@@ -50,10 +52,22 @@ const reviewSchema = {
     bestRating: 5,
   },
 }
+
+let schemaTag: HTMLScriptElement | null = null
+
+onMounted(() => {
+  schemaTag = document.createElement('script')
+  schemaTag.type = 'application/ld+json'
+  schemaTag.textContent = JSON.stringify(reviewSchema)
+  document.head.appendChild(schemaTag)
+})
+
+onUnmounted(() => {
+  schemaTag?.remove()
+})
 </script>
 
 <template>
-  <script type="application/ld+json" v-text="JSON.stringify(reviewSchema)"></script>
   <section id="testimonials" class="testimonials-section">
     <div class="container">
       <!-- Header -->
